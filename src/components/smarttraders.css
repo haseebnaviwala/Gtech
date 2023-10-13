@@ -1,0 +1,188 @@
+.smarttraders{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.smarttradersunder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    margin: 50px 0px;
+}
+
+.smarttraderscontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.smarttraderscontent h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smarttraderscontent .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.smarttraderscontent p{
+    line-height: 25px;
+    color: #55565b;
+    text-align: justify;
+}
+
+.smarttradersfeatures{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.smarttradersfeatures h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smarttradersfeatures .featuresunder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.featuresunder div{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+
+.featuresunder div ul{
+    padding: 0;
+    margin: 0;
+    list-style: circle;
+}
+
+.featuresunder div ul li{
+    padding: 0;
+    margin: 0;
+    color: #55565b;
+}
+
+.morelink a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.productillustate1{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productillustate1 div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: inset(5% 12% 5% 12%);
+}
+
+.productillustate1 div video{
+    width: 80%;
+}
+
+.sec{
+    display: none;
+}
+
+@media screen and (max-width: 950px){
+    .smarttradersfeatures .featuresunder{
+        justify-content: flex-start;
+    }
+    .featuresunder div{
+        width: 90%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .smarttradersfeatures .featuresunder{
+        justify-content: flex-start;
+    }
+    .featuresunder div{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .smarttradersunder{
+        padding: 0 50px;
+        margin: 20px 0px;
+    }
+
+    .smarttraderscontent .heading{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .smarttraderscontent h1{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+
+    .smarttradersfeatures{
+        margin-bottom: 0;
+    }
+
+    .smarttradersfeatures h1 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+
+    .fir{
+        display: none;
+    }
+
+    .sec{
+        display: block;
+    }
+
+    .productillustate1{
+        width: 100%;
+    }
+
+    .productillustate1 div{
+        width: 100%;
+        clip-path: none;
+        overflow: hidden;
+    }
+
+    .productillustate1 div video{
+        width: 100%;
+        transform: scale(1.02);
+    }
+}

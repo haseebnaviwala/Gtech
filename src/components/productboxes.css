@@ -1,0 +1,182 @@
+.productboxesmain{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to left,#184A8E,#000135);
+    color: white;
+    z-index: 1;
+}
+
+.boxheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 10px 0px 10px;
+}
+
+.boxheading h1{
+    font-size: 2.2em;
+    /* letter-spacing: 2px; */
+}
+
+.mainboxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mainboxes .box{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.mainboxes .box:hover{
+    transform: scale(1.1);
+}
+
+.mainboxes .box span{
+    transition: all 0.5s;
+}
+
+.mainboxes .box:hover span{
+    font-weight: bold;
+    color: #184A8E;
+}
+
+.boxsubheading{
+    width: 250px;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000135;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 15px #00000016;
+    color: white;
+}
+
+.boxsubheading img{
+    width: 80%;
+}
+
+.diff{
+    padding: 8px 30px;
+}
+
+.boxtext{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    color: #434343;
+    margin: 0px 30px 0px 30px;
+}
+
+.boxtext p{
+    height: 250px;
+    overflow: hidden;
+    font-size: 17px;
+    padding: 50px 70px 10px 70px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.boxbutton{
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    background: #184A8E;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.boxbutton:hover{
+    background: #113372;
+    box-shadow: 0px 0px 10px rgb(185, 185, 185);
+}
+
+.boxbutton p{
+    height: auto;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 400px){
+    .boxheading h1{
+        font-size: 1.5em;
+        /* letter-spacing: 2px; */
+    }
+
+    .mainboxes .box{
+        width: 320px;
+    }
+
+    .boxsubheading{
+        width: 200px;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 15px #00000016;
+    }
+
+    /* .boxsubheading img{
+        width: 50%;
+    } */
+    
+    .diff{
+        padding: 8px 12px;
+    }
+
+    .boxtext{
+        margin: 0px 20px 0px 20px;
+        height: 300px;
+    }
+    
+    .boxtext p{
+        font-size: 15px;
+        padding: 50px 40px 10px 40px;
+        /* line-height: 20px; */
+    }
+    
+    .boxbutton{
+        width: 120px;
+        margin-bottom: 30px;
+        bottom: 0px;
+    }
+    
+    .boxbutton p{
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+        margin: 0;
+        padding: 10px 10px 10px 10px;
+    }
+}

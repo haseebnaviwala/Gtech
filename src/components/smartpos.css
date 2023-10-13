@@ -1,0 +1,219 @@
+.smartpos{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.smartposunder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    margin: 50px 0px;
+}
+
+.smartposcontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.smartposcontent h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smartposcontent .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.smartposcontent p{
+    line-height: 25px;
+    color: #55565b;
+    text-align: justify;
+}
+
+.smartpospos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.smartpospos h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smartpospos .posunder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.posunder div{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+
+.posunder div ul{
+    padding: 0;
+    margin: 0;
+    list-style: circle;
+}
+
+.posunder div ul li{
+    padding: 0;
+    margin: 0;
+    color: #55565b;
+}
+
+.smartposonline{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.smartposonline h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smartposonline .onlineunder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.onlineunder div{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+
+.onlineunder div ul{
+    padding: 0;
+    margin: 0;
+    list-style: circle;
+}
+
+.onlineunder div ul li{
+    padding: 0;
+    margin: 0;
+    color: #55565b;
+}
+
+.morelink a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.productillustate2{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productillustate2 div{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productillustate2 div img{
+    width: 80%;
+}
+
+@media screen and (max-width: 950px){
+    .smartpospos .posunder, .smartposonline .onlineunder{
+        justify-content: flex-start;
+    }
+    .posunder div, .onlineunder div{
+        width: 50%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .smartpospos .posunder, .smartposonline .onlineunder{
+        justify-content: flex-start;
+    }
+    .posunder div, .onlineunder div{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .smartposunder{
+        padding: 0 50px;
+        margin: 20px 0px;
+    }
+
+    .smartposcontent .heading{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .smartposcontent h1{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+
+    .smartpospos{
+        margin-bottom: 0;
+    }
+
+    .smartpospos h1 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+
+    .smartposonline{
+        margin-bottom: 0;
+    }
+
+    .smartposonline h1 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+
+    .productillustate2 div{
+        width: 100%;
+    }
+
+    .productillustate2 div img{
+        width: 100%;
+    }
+}

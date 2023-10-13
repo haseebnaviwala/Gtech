@@ -1,0 +1,139 @@
+.smartbuilders{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.smartbuildersunder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    margin: 50px 0px;
+}
+
+.smartbuilderscontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.smartbuilderscontent h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smartbuilderscontent .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.smartbuilderscontent p{
+    line-height: 25px;
+    color: #55565b;
+    text-align: justify;
+}
+
+.smartbuildersfeat{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.smartbuildersfeat h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000135;
+}
+
+.smartbuildersfeat .featunder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.featunder div{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+
+.featunder div ul{
+    padding: 0;
+    margin: 0;
+    list-style: circle;
+}
+
+.featunder div ul li{
+    padding: 0;
+    margin: 0;
+    color: #55565b;
+}
+
+.morelink a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+@media screen and (max-width: 950px){
+    .smartbuildersfeat .featunder{
+        justify-content: flex-start;
+    }
+    .featunder div{
+        width: 50%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .smartbuildersfeat .featunder{
+        justify-content: flex-start;
+    }
+    .featunder div{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .smartbuildersunder{
+        padding: 0 50px;
+        margin: 20px 0px;
+    }
+
+    .smartbuilderscontent .heading{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .smartbuilderscontent h1{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+
+    .smartbuildersfeat{
+        margin-bottom: 0;
+    }
+
+    .smartbuildersfeat h1 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000135;
+    }
+}

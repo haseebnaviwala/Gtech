@@ -1,0 +1,20 @@
+.mainmapview{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* min-height: 100vh; */
+    margin-bottom: 2%;
+}
+
+.mapname{
+    margin: 50px 10px;
+}
+
+.mapname h1{
+    font-size: 2.2em;
+    /* letter-spacing: 2px; */
+    font-weight: 700;
+    text-align: center;
+    color: #000135;
+}

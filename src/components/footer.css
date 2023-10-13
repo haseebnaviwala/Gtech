@@ -1,0 +1,191 @@
+.footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #000135;
+    color: white;
+}
+
+.footercontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.footerabout{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footerabout p{
+    margin-top: 40px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.footerproducts{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+}
+
+.footerproducts ul{
+    margin-top: 30px;
+    padding: 0;
+}
+
+.footerproducts ul li{
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.footerproducts ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footeraddress{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+}
+
+.footeraddressbelow{
+    margin-top: 24px;
+}
+
+.footeraddressbelow p{
+    font-size: 15px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.addressicon{
+    position: relative;
+    bottom: -2px;
+    padding-right: 10px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 10px; */
+}
+
+.footersubscribe{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+}
+
+.footersubscribe input{
+    margin-top: 40px;
+    padding: 10px 15px;
+    color: white;
+    background: transparent;
+    border: 1px #FFFFFF solid;
+    border-radius: 5px;
+}
+
+.footersubscribe input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+.footersubscribe .subscribebut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    transform: translateX(130px);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.footersubscribe .subscribebut p{
+    margin: 0;
+    font-weight: 600;
+    color: #000135;
+    transition: all 0.5s;
+}
+
+.footersubscribe .subscribebut:hover{
+    background: #113372; 
+}
+
+.footersubscribe .subscribebut:hover p{
+    color: white;
+}
+
+.footericonsbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footericons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.footericons p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #000135;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.1em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.footericons p:hover{
+    background: #113372;
+    color: white;
+}
+
+.footerbelow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px #707070 solid;
+    padding: 8px 0px;
+}
+
+.footertextbox p{
+    color: #B7B7B7;
+    font-size: 15px;
+}

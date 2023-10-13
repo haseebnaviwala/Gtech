@@ -1,0 +1,335 @@
+.main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    /* background: linear-gradient(to left,#184A8E,#000135); */
+    /* background: url(./images/banner.png); */
+    display: flex;
+    flex-direction: column;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+.backgrounddiv{
+    /* background: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.main .one{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main .two{
+    display: none;
+}
+
+.imgBox{
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.img{
+    width: 180px; 
+    height: 100px;
+}
+
+.navigation{
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s, background 0.5s, box-shadow 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+    z-index: 999;
+    background: #000135;
+    /* box-shadow: 0 25px 35px rgba(0,0,0,0.1); */
+}
+
+.navigation.active{
+    background: #000135;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 360px;
+    transition: width 0.5s, height 0.5s, background 0.5s, box-shadow 0.5s;
+    transition-delay: 0s, 0.75s, 0s, 0s;
+}
+
+.navigation .userBx{
+    position: relative;
+    width: 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.navigation.active .userBx{
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+}
+
+.navigation .userBx .username{
+    white-space: nowrap;
+    color: white;
+    font-size: 1.3em;
+    padding: 0px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation .menuToggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .menuToggle:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: white;
+    transform: translateY(-10px);
+    box-shadow: 0 10px white;
+    transition: 0.5s;
+}
+
+.navigation .menuToggle:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: white;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.navigation.active .menuToggle:before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 white;
+}
+
+.navigation.active .menuToggle:after{
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.466);
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.belowBox{
+    position: absolute;
+    top: 32%;
+    padding: 0px 80px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+
+.belowText{
+    width: 500px;
+    font-weight: Light;
+    font-size: 15px;
+}
+
+.buttonBox{
+    width: 180px;
+    background: white;
+    color: black;
+    border-radius: 12px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.buttonBox .but{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    margin: 15px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.buttonBox:hover{
+    background: #113372;
+}
+
+.buttonBox:hover .but{
+    color: white;
+}
+
+@media screen and (max-width: 650px){
+    .main .one{
+        display: none;
+    }
+
+    .main .two{
+        display: block;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .navigation{
+        top: 50px;
+        right: 50px;
+    }
+
+    .imgBox{
+        top: 30px;
+        left: 50px;
+    }
+
+    .belowBox{
+        position: unset;
+        padding: 0px 50px;
+        align-items: center;
+    }
+
+    .belowBox .text{
+        display: none;
+    }
+
+    .mainText{
+        font-size: 18px;
+        display: none;
+    }
+
+    .belowText{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .buttonBox{
+        position: absolute;
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 405px){
+    /* .main{
+        background: linear-gradient(to left,#184A8E,#000135);
+        background: url(./images/banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    } */
+
+    /* .main video{
+        display: none;
+    } */
+
+    .mainText{
+        font-size: 12px;
+    }
+
+    .buttonBox{
+        width: 150px;
+    }
+
+    .but{
+        font-size: 12px;
+    }
+
+    .navigation{
+        right: 25px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation .menuToggle{
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation .menuToggle:before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: white;
+        transform: translateY(-10px);
+        box-shadow: 0 10px white;
+        transition: 0.5s;
+    }
+    
+    .navigation .menuToggle:after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: white;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .navigation .userBx{
+        height: 40px;
+    }
+
+    .menu{
+        margin-top: 40px;
+        padding: 20px;
+    }
+}
